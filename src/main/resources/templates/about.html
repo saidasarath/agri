@@ -1,0 +1,39 @@
+<!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+    <section>
+    <div class="container">
+        <h1>About Us</h1>
+        <p th:text="${aboutUsText}">Default about us text goes here.</p>
+    </div>
+</section>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+    <section>
+    <div class="about-us">
+        <div class="about-content">
+            <h2>About Our Company</h2>
+            <p>
+                we are passionate about supporting farmers and empowering agriculture. With a deep-rooted commitment to the success of agriculture, we have been serving the farming community for [number of years] years. Our journey began with a simple mission: to provide farmers with the best quality agricultural goods and services to help them thrive in an ever-changing and challenging environment.</p></br>
+        <p>
+                Our mission is to be a trusted partner in agriculture, equipping farmers with the tools and knowledge they need to cultivate the land, raise healthy livestock, and sustainably grow the world's food supply. We are dedicated to enhancing agricultural productivity, promoting responsible and sustainable farming practices, and fostering a stronger, more resilient agricultural community.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="/image/background.jpg" alt="Our Company" />
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"th:replace="base::layout(~{::section})" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Login Form</title>
+</head>
+<body>
+  <section>
+    <div class="background"></div>
+    <div class="login-container" style="height: 400px; width: 300px;">
+        <form class="login-form" th:action="@{/dologin}" method="post">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" name="username"id="username"class="login-input" required>
+            <input type="password" placeholder="Password" name="password" class="login-input" required>
+            <button type="submit" class="login-button">Submit</button>
+        </form>
+    </div>
+  </section>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Login Form</title>
+</head>
+<body>
+  <section >
+    <div class="background-image-login"></div>
+    <div class="login-container">
+        <form class="login-form" th:action="@{/dologin}" method="post">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" name="username" id="username" class="login-input" required>
+            <input type="password" placeholder="Password" name="password" class="login-input" required>
+            <button type="submit" class="login-button">Submit</button>
+        </form>
+    </div>
+  </section>
+</body>
+</html>

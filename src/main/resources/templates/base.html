@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+ Created By CodingNepal - www.codingnepalweb.com
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Layout | CodingLab</title> 
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+  <nav >
+    <div class="menu">
+      <div class="logo">
+        <a th:href="@{/}">AGRICULTURE</a>
+      </div>
+      <ul>
+        <li><a th:href="@{/}">Home</a></li>
+        <li><a th:href="@{/about}">About</a></li>
+        <li><a th:href="@{/register}">Register</a></li>
+        <li><a th:href="@{/login}">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div th:replace="${content}">
+
+  </div>
+    </div>
+  </div>
+</body>
+ </html> -->
+<!-- <!DOCTYPE html> -->
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="company-name">
+            <a th:href="@{/}" class="navbar-link">AGRO</a>
+        </div>
+        <ul class="navbar-list">
+            <li class="navbar-item"><a th:href="@{/}" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a th:href="@{/about}" class="navbar-link">About</a></li>
+            <li class="navbar-item"><a th:href="@{/register}" class="navbar-link">register</a></li>
+            <li class="navbar-item"><a th:href="@{/login}" class="navbar-link">login</a></li>
+        </ul>
+    </nav>
+    <div th:replace="${content}">
+
+    </div>
+</body>
+</html> 

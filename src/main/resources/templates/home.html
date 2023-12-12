@@ -1,0 +1,19 @@
+
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="homebase::layout(~{::section})">
+  <head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+  <section>
+    <div class="background-image">
+        <div class="content">
+            <h1> NATURUAL AGRICULTURE</h1>
+            <div class="button-container">
+                <a th:href="@{/user/product}" class="button">products</a>
+            </div>
+        </div>
+    </div>
+  </section>
+</body>
+</html> 

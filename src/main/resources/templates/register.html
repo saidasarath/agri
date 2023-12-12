@@ -1,0 +1,70 @@
+<!--  <html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form th:action="@{/doregister}" method="post">
+        <input type="text" name="name" placeholder="Name"/><br/>
+        <input type="email" name="email" placeholder="email"/><br/>
+
+        <input type="password" name="password" placeholder="password"/><br/>
+        <input type="submit" value="submit"/>
+    </form>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>register Form</title>
+</head>
+<body>
+  <section>
+    <div class="background-image-login"></div>
+    <div class="login-container" style="width: 300px;">
+        <form class="login-form" th:action="@{/doregister}" method="post">
+            <h2>Register</h2>
+            <input type="text" placeholder="Username" name="name"class="login-input" required>
+            <input type="email" placeholder="email" name="email"class="login-input" required>
+            
+            <input type="password" placeholder="Password" name="password" class="login-input" required>
+            <input type="password" placeholder="confirm password" class="login-input" required>
+            <button type="submit" class="login-button">Submit</button>
+        </form>
+    </div>
+  </section>
+</body>
+</html>  -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Register Form</title>
+</head>
+<body>
+  <section >
+    <div class="background-image-login"></div>
+    <div class="login-container">
+        <form class="login-form" th:action="@{/doregister}" method="post">
+            <h2>Register</h2>
+            <input type="text" placeholder="Username" name="name" class="login-input" required>
+            <input type="email" placeholder="Email" name="email" class="login-input" required>
+            <input type="password" placeholder="Password" name="password" class="login-input" required>
+            <input type="password" placeholder="Confirm Password" class="login-input" required>
+            <button type="submit" class="login-button">Submit</button>
+        </form>
+    </div>
+  </section>
+</body>
+</html>
+
+

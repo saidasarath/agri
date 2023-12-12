@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+<head>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="company-name">
+            <a th:href="@{/user/}" class="navbar-link">AGRO</a>
+        </div>
+        <ul class="navbar-list">
+            <li class="navbar-item"><a th:href="@{/user/}" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a th:href="@{/user/product}" class="navbar-link">product</a></li>
+            <li class="navbar-item"><a th:href="@{/logout}" class="navbar-link">logout</a></li>
+        </ul>
+    </nav>
+    <div th:replace="${content}">
+
+    </div>
+</body>
+</html> 
